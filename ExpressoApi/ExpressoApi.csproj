@@ -99,6 +99,11 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202008111939462_InitialCreate.cs" />
+    <Compile Include="Migrations\202008111939462_InitialCreate.designer.cs">
+      <DependentUpon>202008111939462_InitialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Menu.cs" />
     <Compile Include="Models\Reservation.cs" />
     <Compile Include="Models\SubMenu.cs" />
@@ -116,6 +121,11 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\202008111939462_InitialCreate.resx">
+      <DependentUpon>202008111939462_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
